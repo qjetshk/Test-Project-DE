@@ -1,0 +1,91 @@
+.clients {
+  &__header {
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 110px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1100px) {
+      padding: 0 30px 110px 30px;
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    color: white !important;
+    max-width: 230px;
+    @media (max-width: 600px) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    color: white;
+    opacity: 0.6;
+    max-width: 520px;
+  }
+
+  &__section {
+    background-color: $blue_04;
+    border-top-left-radius: 200px;
+    padding-top: 96px;
+
+    @media (max-width: 800px) {
+      border-top-left-radius: 150px;
+    }
+
+    @media (max-width: 600px) {
+      border-top-left-radius: 120px;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    outline: $blue_04 1px solid;
+    outline-offset: -1px;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+    
+    margin-bottom: 125px;
+  }
+}
+
+.client {
+  text-align: center;
+  max-width: 235px;
+  color: white;
+  padding: 41px;
+  border: 1px rgba(255, 255, 255, 0.4) solid;
+  font-family: "Gilroy";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 46px;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  @media (max-width: 1000px) {
+    max-width: 100%;
+  }
+
+  &:hover{
+    background-color: rgba($blue_01, 0.2)
+  }
+
+
+  &__more{
+    background-color: rgba($blue_01, 0.2)
+  }
+}

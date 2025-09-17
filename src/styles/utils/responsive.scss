@@ -1,0 +1,42 @@
+$breakpoints: (
+  'xs': 360px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 940px
+) !default;
+
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint `#{$breakpoint}`";
+  }
+}
+
+@mixin container($container-width) {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+  @include respond-to('sm') {
+    padding: 0 20px;
+  }
+  
+  @include respond-to('md') {
+    padding: 0 30px;
+  }
+}
+
+.container{
+    @include container(1000px);
+}
+
+.header__container{
+    @include container(1200px);
+}
+
+

@@ -1,0 +1,86 @@
+%white {
+  color: #fff;
+}
+
+%text {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Gilroy";
+  font-weight: 400;
+}
+
+%opacity60 {
+  opacity: 0.6;
+}
+
+%opacity80 {
+  opacity: 0.8;
+}
+
+%input {
+  @extend %text;
+
+  padding: 21px 36px;
+  border: rgba(53, 110, 173, 0.4) 1px solid;
+  border-radius: 10px;
+  color: rgba(31, 63, 104, 0.4);
+
+  &::placeholder {
+    color: rgba(31, 63, 104, 0.2);
+  }
+
+  &:focus {
+    outline: 2px $blue_03 solid;
+    outline-offset: -1px;
+  }
+}
+
+%button {
+  @extend %text;
+  @extend %white;
+
+  background-color: $blue_04;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $blue_03;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+body {
+  font-family: "Gilroy";
+}
+
+.btn {
+  @extend %button;
+
+  width: 220px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.btn2 {
+  @extend %button;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  width: 100%;
+}
+
+input {
+  @extend %input; 
+}
+
+textarea {
+  @extend %input;
+
+  height: 144px;
+  resize: none; 
+}

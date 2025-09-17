@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/img/logo.svg" />
+    <title>Test Project DE</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="header__wrapper">
+        <section class="header__section">
+          <header class="header header__container">
+            <a href="">
+              <img class="logo" src="/img/logo.svg" alt="Logo" />
+            </a>
+            <div class="burger">
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+            </div>
+          </header>
+
+          <section class="container hero">
+            <section class="hero__section">
+              <h1 class="hero__title h1">New Automation Tool for Your Home</h1>
+              <p class="hero__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus tristique vulputate ultrices ut mauris tellus at.
+                Posuere sollicitudin odio teIlus elit.
+              </p>
+              <button class="btn">See Our Project</button>
+            </section>
+          </section>
+        </section>
+      </div>
+
+      <main class="main cards container">
+        <h2 class="h2 main__title">
+          What we do to help our client grow in digital era,
+        </h2>
+      </main>
+
+      <section class="clients__section">
+        <section class="container clients">
+          <div class="clients__header">
+            <h2 class="h2 clients__title">Our Beloved Client</h2>
+            <p class="clients__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <section class="clients__container">
+            <div class="client">LOGO CLIENT 1</div>
+            <div class="client">LOGO CLIENT 2</div>
+            <div class="client">LOGO CLIENT 3</div>
+            <div class="client">LOGO CLIENT 4</div>
+            <div class="client">LOGO CLIENT 5</div>
+            <div class="client">LOGO CLIENT 6</div>
+            <div class="client">LOGO CLIENT 7</div>
+            <div class="client client__more">More Client</div>
+          </section>
+        </section>
+
+        <footer class="footer__bg">
+          <section class="footer">
+            <section class="footer__up container">
+              <div class="footer__up__content">
+                <h2 class="h2 footer__title">
+                  Intersted to work with our team?
+                </h2>
+                <p class="footer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+              <button id="openModalBtn" class="btn">Let’s Talk</button>
+            </section>
+
+            <div class="footer__br"></div>
+
+            <section class="footer__down container">
+              <div class="footer__down__content">
+                <ul class="footer__info">
+                  <li class="logo__container">
+                    <a href="">
+                      <img src="/img/logo2.svg" alt="" class="logo"
+                    /></a>
+                    <h3 class="h3">Afrianska</h3>
+                  </li>
+                  <li>
+                    <span class="text">A.</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="text">T.</span>
+                    <p class="text">+62-812-7313-4321</p>
+                  </li>
+                  <li>
+                    <span class="text">E</span>
+                    <p class="text">hello.afrian@gmail.com</p>
+                  </li>
+                </ul>
+                <ul class="footer__links">
+                  <li><h3 class="h3">About US</h3></li>
+                  <a href="">About</a>
+                  <a href="">What We Do</a>
+                  <a href="">Project</a>
+                  <a href="">How It Work With Us</a>
+                </ul>
+                <ul class="footer__links">
+                  <li><h3 class="h3">Follow US</h3></li>
+                  <a href="">Instagram</a>
+                  <a href="">Facebook</a>
+                  <a href="">LinkedIn</a>
+                  <a href="">Youtube</a>
+                </ul>
+              </div>
+              <div class="text copyright">
+                2019 © Afrianska. All rights reserved.
+              </div>
+            </section>
+          </section>
+        </footer>
+      </section>
+    </div>
+
+    <section id="modal" class="modal">
+      <form class="modal__content">
+        <span class="close">&times;</span>
+        <h3 class="h3">SEND US MESSAGE</h3>
+        <div class="modal__form">
+          <div class="modal__input">
+            <div class="modal__label">
+              <label class="text">Full Name*</label>
+            </div>
+
+            <input
+              type="text input"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="modal__input">
+            <div class="modal__label">
+              <label class="text input">Email*</label>
+            </div>
+
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="modal__input">
+            <div class="modal__label">
+              <label class="text input">Message*</label>
+            </div>
+
+            <textarea
+              placeholder="Your Message"
+              name="message"
+              id="message"
+            ></textarea>
+          </div>
+        </div>
+        <button id="submit" class="btn2">SUBMIT</button>
+      </form>
+    </section>
+
+    <section id="popup" class="modal">
+      <div class="modal__content">
+        <span class="close">&times;</span>
+        <h2 id="popup__message" class="h2 popup__message"></h2>
+      </div>
+    </section>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
